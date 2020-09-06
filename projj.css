@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+   background-image: linear-gradient(to right,rgb(68, 43, 4),rgb(194, 116, 14));
+}
+#logobox{
+    width: 30%;
+    height: 100%;
+    background: rgb(224, 202, 5);
+    float: right;
+}
+#h1header{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+    color:black;
+}
+
+#logo{
+    height: 100%;
+    border-radius: 50% 50%;
+}
+nav{
+    width: 70%;
+    height: 100px;
+    text-align: center;
+
+
+}
+nav li{
+    display:inline-block;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+
+}
+li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+li a:hover{
+    background: white;
+    height: 100% ;
+    color: black;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 500px;
+    background: brown;
+    border-top: 3px rgb(236, 222, 14) solid;
+    animation-name: changbackg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes changbackg{
+    0%{
+        background: white;
+    }
+
+25%{
+    background: rgb(215, 216, 128);
+}
+50%{
+    background: rgb(187, 144, 24);
+}
+100%{
+    background:rgb(122, 81, 5);
+}
+}
+aside{
+    width: 30%;
+    height: 500px;
+    background: rgb(128, 99, 55);
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 80%;
+    height: 250px;
+    
+}
+aside h1{
+    padding: 15px 0px;
+    border-bottom: rgb(56, 32, 3) 4px double;
+
+}
+main article{
+    width: 70%;
+    height: 500px;
+    float: right;
+    position: relative;
+
+}
+#box{
+    width: 40%;
+    height: 200px;
+    background: rgb(214, 150, 10);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+div h2{
+    color: rgb(48, 33, 4);
+    font-size: 20px;
+    border-bottom: 3px rgb(238, 12, 12) solid;
+    padding: 10px;
+}
+div p{
+    text-align: justify;
+    font-style: italic;
+    font-size: larger;
+    padding: 10px;
+}
+#icon-box{
+    width: 100%;
+    display: inline-block;
+}
+#icon-box img{
+    width: 50px;
+    height: 50px;
+    padding:15px;
+    border-bottom: rgb(70, 46, 3) 2px solid;
+}
+#icon-box img:hover{
+    width: 75px;
+    height: 75px;
+    border-bottom: 4px solid black;
+}
+#artical2{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+#artical2 a{
+    padding: 0px 20px;
+}
+@media only screen and (min-width:940px){
+    #logobox{
+        width: 35%;
+    }
+    aside{
+        width: 35%;
+    }
+    main article{
+        width: 65%;
+    }
+    
+
+}
+@media only screen and (max-width:939px){
+    #logobox{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:798px){
+    header,main{
+        height:auto;
+    }
+    #logobox{
+        width:100%;
+        float: none;
+        text-align: center;
+    }
+    #h1header{
+        float: none;
+        text-align: center;
+
+    }
+    aside{
+        width: 100%;
+    }
+    #box{
+        height: 230px;
+        width: 100%;
+    }
+    #artical2{
+        text-align: center;
+        width: 100%;
+    }
+   
+}
+@media only screen and (max-width:500px){
+    nav{
+        width:100%
+    }
+}
